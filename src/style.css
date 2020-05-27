@@ -1,0 +1,308 @@
+  
+     body{
+      color: whitesmoke;
+    }
+     
+    /* for navbar */
+    nav{
+      position: fixed;
+      background: rgba(0, 0, 0, 0.2);
+      padding:0px 20px;
+    }
+    nav li a:hover{
+      background: green;
+    }
+  
+
+  /* for background Image */
+  .content-wrapper{
+    width: auto;
+    margin: auto;
+  }
+
+  .content-wrapper img{
+    width: 100%;
+    background-size:cover; 
+    background-size:cover; 
+      height: 450px;
+      margin-top: -2%;
+  }
+  @media screen and (max-width: 750px) {
+    .content-wrapper img{
+        height: 30%;
+    }
+
+  }
+
+  /* texts on the background image */
+  
+   .text-wrapper{
+    width: 100%;
+    position: relative;
+    margin-top: -31%; 
+    margin-left: -15%;
+  }
+   
+  @media screen and (max-width: 571px){
+    
+  .text-wrapper h3{
+    margin-top: -42%;
+    font-size: small;
+    font-weight: 0;
+   
+  }
+  .text-wrapper h4{
+   margin-left: 2%;
+   font-weight: 0;
+   margin-top: -3%;
+  }
+  .text-wrapper{
+    margin-left: -5%;
+  }
+  .waves-effect{
+    /* margin-right: 80%; */
+    /* padding-right: -10%; */
+    font-size: 7px;
+      }
+ } 
+
+  .text-wrapper h3{
+    text-align: left;
+    color: Navy;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+  }
+
+  .text-wrapper h4{
+    text-align: left;
+    color: Navy;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+
+  }
+
+ 
+/* FOR LOGGIN FORM */
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+   overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+ 
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 25%; 
+  position: relative;
+  margin-top: 6%;
+  float:center;
+ 
+}
+
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/* for the card body */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card  {
+  flex: 1 0 100px;
+
+  box-sizing: border-box;
+  margin: 1rem .25em;
+  border-radius:  10px; 
+}
+
+.centered-card{
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #ccc;
+  padding-bottom: 2%;
+}
+
+ h5{
+  text-align: center;
+   color:navy; 
+  
+   margin-bottom:1%;
+  padding-top: 1%;
+}  
+.card-content{
+  color: #000;
+}
+#card-button{
+   
+  margin-top: -3vmin;
+  float: right;
+ padding-left: 10%;
+}
+/* 
+ the second card body without background-color */
+ .centered-cards{
+  padding-left: 5%;
+  padding-right: 5%; 
+   padding-bottom: 2%;
+} 
+
+#view-all{
+display:flex;
+  justify-content: center;
+  margin-left: 45%;
+  margin-right: 45%;
+
+}
+
+/* the mailing list  */
+.last{
+  color: Navy;
+  text-align: center;
+}
+ .email{
+   
+    margin-left: 1%;
+    margin-right: -6%;
+    padding-left: 30%;
+    padding-right: -10%;
+ 
+} 
+
+.input-field input[type=email] {
+  border-bottom: 1px solid #888;
+  box-shadow: none;
+  box-sizing: border-box !important;
+  border-style: solid;
+  border-width: medium;
+  border-radius: 5px;
+  border-color: #888;
+
+} 
+
+ #email::-webkit-input-placeholder{
+ 
+   text-align: center;
+  color:#000;
+} 
+.input-field input[type=submit]{
+  position: absolute;
+  float: left;
+
+}
+/* footer */
+.page-footer{
+  background-color: Navy;
+}
+
+.footer-copyright{
+  margin-left: 70%;
+}
+
+ 
+
+

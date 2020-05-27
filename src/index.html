@@ -1,15 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>zero hunger</title>
+  </head>
 
-    <h2 data-app-name></h2>
+  <body>
+
+    <!-- navbar -->
+    <nav>
+      <div class="nav-wrapper">
+        <img class="responsive-img" id="brand" style="width: 5%; height: auto;  margin-left: 10%; padding-bottom:2px; "
+          src="brand.gif" />
+        <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Why Famers</a></li>
+          <li><a href="#">Stories</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#" id="btn" style="width:auto;">Login</a></li>
+          <li><a href="#" style=" border: 1px solid black ">Create a free account</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- navbar mobile display -->
+
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="#">Why Famers</a></li>
+      <li><a href="#">Stories</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#" button onclick="document.getElementById('id01').style.display='block'">
+          Login</a></li>
+      <li><a href="#">Create a free account</a></li>
+    </ul>
+
+    <!-- for background image and the content -->
+
+    <div class="content-wrapper">
+      <img src="back.jpg">
+      <!-- login modal design -->
+      <div id="id01" class="modal">
+        <form class="modal-content animate" action="#" method="post">
+          <div class="form-cont">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+            <button type="button" id="cancel" class="cancelbtn">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+
+    <!-- texts on background image -->
+
+    <div class="container">
+      <div class="text-wrapper">
+        <div class="flow-text">
+          <h3><b>
+              The Safer way <br> to invest in farmers</b></h3>
+          <h4><b>We help farmers gain access to investment <br>opportunity locally and foreign</b></h4>
+          <h4><b>Earn 20% - 30% Interests On Investments</b></h4>
+          <a class="waves-effect indigo darken-4t btn-small">create a free account</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD BODIES -->
+
+    <div class="centered-card">
+      <h5> Top 3 Investments opportunities</h5>
+      <section class="cards">
+        <article class="card">
+          <div class="card-image">
+            <img src="rice.jpg">
+            <a class="btn-small halfway-fab waves-effect waves-ligh green" id="card-button">OPEN</a>
+          </div>
+          <div class="card-content">
+            <h6><b> Fish Farm</b></h6><br>
+            <p style="font-size:x-small"> <b>₦50,000 </b><br>30% returns in 3 months</p>
+          </div>
+        </article><!-- /card-one -->
+
+        <article class="card">
+          <div class="card-image">
+            <img src="fish.jpg">
+            <a class="btn-small halfway-fab waves-effect waves-ligh green" id="card-button">OPEN</a>
+          </div>
+          <div class="card-content">
+            <h6><b> Fish Farm</b></h6><br>
+            <p style="font-size:x-small"> <b>₦50,000 </b><br>30% returns in 3 months</p>
+          </div>
+        </article><!-- /card-two -->
+
+        <article class="card">
+          <div class="card-image">
+            <img src="coco.jpg">
+            <a class="btn-small halfway-fab waves-effect waves-ligh red" id="card-button">SOLD</a>
+          </div>
+          <div class="card-content">
+            <h6><b> Coco Farm</b></h6><br>
+            <p style="font-size:x-small"> ₦50,000 <br>30% returns in 3 months</p>
+          </div>
+        </article><!-- /card-three -->
+      </section>
+    </div>
+    <br>
+
+    <div class="centered-cards">
+      <h5>Potential Investment opportunities</h5>
+      <section class="cards">
+        <article class="card">
+          <div class="card-image">
+            <img src="rice.jpg">
+            <a class="btn-small halfway-fab waves-effect waves-ligh green" id="card-button">OPEN</a>
+          </div>
+          <div class="card-content">
+            <h6><b> Fish Farm</b></h6><br>
+            <p style="font-size:x-small"> <b>₦50,000 </b><br>30% returns in 3 months</p>
+          </div>
+        </article><!-- /card-one -->
+
+        <article class="card">
+          <div class="card-image">
+            <img src="fish.jpg">
+            <a class="btn-small halfway-fab waves-effect waves-ligh green" id="card-button">OPEN</a>
+          </div>
+          <div class="card-content">
+
+            <h6><b> Fish Farm</b></h6><br>
+            <p style="font-size:x-small"> <b>₦50,000 </b><br>30% returns in 3 months</p>
+          </div>
+        </article><!-- /card-two -->
+
+        <article class="card">
+          <div class="card-image">
+            <img src="coco.jpg">
+            <a class="btn-small halfway-fab waves-effect waves-ligh red" id="card-button">SOLD</a>
+          </div>
+          <div class="card-content">
+            <h6><b> Coco Farm</b></h6><br>
+            <p style="font-size:x-small"> ₦50,000 <br>30% returns in 3 months</p>
+          </div>
+        </article><!-- /card-three -->
+
+      </section>
+      <section class="cards">
+        <article class="card">
+          <div class="card-image">
+            <img src="rice.jpg">
+            <a class="btn-small halfway-fab waves-effect waves-ligh green" id="card-button">OPEN</a>
+          </div>
+          <div class="card-content">
+            <h6><b> Fish Farm</b></h6><br>
+            <p style="font-size:x-small"> <b>₦50,000 </b><br>30% returns in 3 months</p>
+          </div>
+        </article><!-- /card-one -->
+
+        <article class="card">
+          <div class="card-image">
+            <img src="fish.jpg">
+            <a class="btn-small halfway-fab waves-effect waves-ligh green" id="card-button">OPEN</a>
+          </div>
+          <div class="card-content">
+
+            <h6><b> Fish Farm</b></h6><br>
+            <p style="font-size:x-small"> <b>₦50,000 </b><br>30% returns in 3 months</p>
+          </div>
+        </article><!-- /card-two -->
+
+        <article class="card">
+          <div class="card-image">
+            <img src="coco.jpg">
+            <a class="btn-small halfway-fab waves-effect waves-ligh red" id="card-button">SOLD</a>
+          </div>
+          <div class="card-content">
+            <h6><b> Coco Farm</b></h6><br>
+            <p style="font-size:x-small"> ₦50,000 <br>30% returns in 3 months</p>
+          </div>
+        </article><!-- /card-three -->
+      </section>
+    </div>
+
+    <a class=" waves-effect indigo darken-4t btn-small" id="view-all" href="#"> View all</a>
+    </div>
+    <br>
+    <div class="last">
+      <h4> Join Our Mailing List</h4>
+      <h6>For regular updates on Investments opportunities and review letters</h6>
+    </div>
+
+
+<!-- email form -->
+    <div class="email">
+      <div class="row">
+        <div class="input-field col s6 ">
+
+          <input type="email" id="icon_prefix" placeholder="www@mail.com" name="email">
+
+          <i class=" material-icons prefix fa fa-envelope" style="color:black"></i>
+        </div>
+      </div>
+      </form>
+    </div>
+    </div>
+    <br><br><br>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="row">
+        <div class="col l6 m6 s12">
+          <h5 class="white-text" style="padding-right: 70%;">Farmer</h5>
+          <p class="grey-text text-lighten-4" style="margin-left: 10%;">Lorem Ipsum is simply dummy text of the printing
+            <br>
+            and typesetting industry.
+            Lorem Ipsum has been <br> the industry's standard dummy text ever since the 1500s,</p>
+        </div>
+
+        <div class="col l3 m3 s12">
+          <h6 class="white-text">Company</h6>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Press Release</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Carears</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col l3 m3 s12">
+          <h6 class="white-text">Products</h6>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Press Release</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Carears</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <!-- <div class="s12 m6 l3" id="copy-right">&copy; 2020 Copyright <a class="white-text text-lighten-4" >Famers</a></div>
+     -->
+        <div class="s12 m6 l3"><a class="grey-text text-lighten-4 right"> <b style="font-size: 20px;"> Follow Us </b>
+
+            <i class="fa fa-youtube-square fa-3x" href="#" target="_blank"></i>
+            <i class="fa fa-facebook-square fa-3x" href="#" target="_blank"></i>
+            <i class="fa fa-instagram fa-3x" href="#" target="_blank"></i>
+            <i class="fa fa-twitter-square fa-3x" href="#" target="_blank"></i></a>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+
+      $(document).ready(function () {
+        $('.sidenav').sidenav();
+        $(window).scroll(function () {
+
+          if ($(window).scrollTop() > 300) {
+            $("nav").addClass("green");
+          } else {
+            $("nav").removeClass("green");
+
+          }
+
+        });
+
+      });
+   
+
+    </script>
+
 
     <script src="./index.js"></script>
+    <Script src = "modal.js"></Script>
     
-</body>
+    
+
+  </body>
+
 </html>
