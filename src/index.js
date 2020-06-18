@@ -1,5 +1,8 @@
 import app from './app';
 
+
+
+
 const startApp = async () => {
   const header = document.querySelector('[data-app-name]');
   if (!header) return;
@@ -9,3 +12,8 @@ const startApp = async () => {
 };
 
 document.addEventListener('DOMContentLoaded', startApp);
+
+
+
+
+
